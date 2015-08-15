@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.comments-avatar{
+	width:48px;
+	height:48px;
+}
+.textarea-style{
+	margin: 0px -1px 0px 0px; 
+	height: 79px; 
+	width: 486px;
+}
+.img-guest{
+	background-image: url("../images/guest.png") !important;
+	background-size:100% 100%;
+}
+.img-admin{
+	background-image: url("../images/admin.png") !important;
+	background-size:100% 100%;
+}
