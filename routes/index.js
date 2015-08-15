@@ -69,7 +69,7 @@ router.post('/getData', function(req, res, next) {
 	});
 });
 router.post('/getAllData', function(req, res, next) {
-	if(req.body.adminpass =="mima"){
+	if(req.body.adminpass =="123"){
 	  	NewsData.find(null,null,{sort:{_id:-1}},function(err, newsdata) {
 			res.send(JSON.stringify(newsdata));
 			res.end();
@@ -103,7 +103,7 @@ router.get('/show/:name/:link/:adminpass', function(req, res, next) {
   	NewsData.find(function(err, newsdata) {
 		console.log("newsdata:"+newsdata);
 	});
-	if(req.params.adminpass == "yuhuiqian"){
+	if(req.params.adminpass == "123"){
 		res.render('index', {title: '临水照影  评论系统', lock:"f",name:req.params.name,link:req.params.link,adminpass:req.params.adminpass});
 	}else{
 		res.render('index', {title: '临水照影  评论系统', lock:"t",name:req.params.name,link:req.params.link,adminpass:req.params.adminpass});
